@@ -39,7 +39,7 @@ def main():
         if len(peoples) == 0:
             end_string = "il ne reste plus personne"
 
-        print(f"{start_string} {poped_person} {end_string}")                
+        print(f"{start_string} {poped_person} {end_string}")
         number += 1
 
 
