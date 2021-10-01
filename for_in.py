@@ -15,7 +15,7 @@ def main():
 
     peoples = [
         "Timothée",
-        "Gael",
+        "Gaël",
         "David",
         "Quentin",
         "Théo",
@@ -25,9 +25,12 @@ def main():
         "Adrien",
         "Cécilia"]
     number = 1
+    # p2 = list(peoples)
 
-    while len(peoples) != 0:
+    for name in list(peoples):
+    # for name in p2:
 
+        # number = p2.index(name) + 1
         index_random_people = random.randint(0, len(peoples)-1)
         poped_person = peoples.pop(index_random_people)
         start_string = f"{number}ème"
@@ -41,7 +44,6 @@ def main():
 
         print(f"{start_string} {poped_person} {end_string}")
         number += 1
-
 
 # code starts here
 if __name__ == "__main__":
